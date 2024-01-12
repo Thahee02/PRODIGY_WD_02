@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stop Watch</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <style></style>
+  </head>
+  <body
+    class="bg-[url('./assets/img/bg.jpg')] bg-opacity-5 bg-center bg-no-repeat bg-cover flex flex-col justify-center items-center h-screen select-none"
+  >
+    <!-- title -->
+    <div class="text-center px-10 text-gray-800 select-none max-sm:w-xl">
+      <h1
+        class="max-md:text-3xl max-lg:text-6xl max-xl:text-7xl xl:text-8xl mb-3 font-extrabold "
+      >
+        Stop Watch 🕑
+      </h1>
+      <p
+        class="max-md:text-xs max-lg:text-sm max-xl:text-lg xl:text-xl font-semibold bg-gray-800 text-white px-2 py-1 rounded"
+      >
+        Developed by
+        <a
+          href="https://thahee02.github.io/Thahee-Portfolio/"
+          target="_blank"
+          class="border-b-2 border-red-600"
+          >AMM.Hathil Thahee</a
+        >. Using HTML, TailwindCSS, JavaScript, and jQuery for
+        <a href="">Prodigy InfoTech</a> internship.
+      </p>
+    </div>
+
+    <!-- Timer -->
+    <div
+      class="flex justify-center items-center cursor-default space-x-2 text-gray-800 mt-5"
+    >
+      <!-- hours -->
+      <div class="text-center flex justify-center items-center bg-gray-800 text-white max-sm:w-14 max-sm:h-14 max-md:w-20 max-md:h-20 md:w-36 md:h-36 rounded">
+        <span
+          class="max-sm:text-4xl max-md:text-6xl md:text-8xl font-semibold"
+          id="hours"
+        >
+          00
+        </span>
+      </div>
+
+      <!-- Separator -->
+      <div class="max-sm:text-4xl max-md:text-6xl md:text-8xl separator">:</div>
+
+      <!-- minutes -->
+      <div class="text-center flex justify-center items-center bg-gray-800 text-white max-sm:w-14 max-sm:h-14 max-md:w-20 max-md:h-20 md:w-36 md:h-36 rounded">
+        <span
+          class="max-sm:text-4xl max-md:text-6xl md:text-8xl font-semibold"
+          id="minutes"
+        >
+          00
+        </span>
+      </div>
+
+      <!-- Separator -->
+      <div class="max-sm:text-4xl max-md:text-6xl md:text-8xl separator">:</div>
+
+      <!-- seconds -->
+      <div class="text-center flex justify-center items-center bg-gray-800 text-white max-sm:w-14 max-sm:h-14 max-md:w-20 max-md:h-20 md:w-36 md:h-36 rounded">
+        <span
+          class="max-sm:text-4xl max-md:text-6xl md:text-8xl font-semibold"
+          id="seconds"
+        >
+          00
+        </span>
+      </div>
+
+      <!-- Separator -->
+      <div class="max-sm:text-4xl max-md:text-6xl md:text-8xl separator">:</div>
+
+      <!-- milli seconds -->
+      <div class="text-center flex justify-center items-center bg-gray-800 text-white max-sm:w-14 max-sm:h-14 max-md:w-20 max-md:h-20 md:w-36 md:h-36 rounded">
+        <span
+          class="max-sm:text-4xl max-md:text-6xl md:text-8xl font-semibold"
+          id="milliseconds"
+        >
+          00
+        </span>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="mt-5">
+      <button class="bg-green-600 py-1 px-3 rounded text-white font-semibold w-18 shadow-2xl" id="startBtn">
+        Start
+      </button>
+  
+      <button class="bg-blue-600 py-1 px-3 rounded text-white font-semibold w-18 shadow-2xl" id="stopBtn">
+        Stop
+      </button>
+  
+      <button class="bg-red-600 py-1 px-3 rounded text-white font-semibold w-18 shadow-2xl" id="resetBtn">
+        Reset
+      </button>
+    </div>
+
+    <!-- jQuery file -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- main.js file -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
