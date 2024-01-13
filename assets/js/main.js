@@ -1,5 +1,5 @@
 $("document").ready(function () {
-  let hrs = (min = sec = msec = 0);
+  let hrs = min = sec = msec = 0;
 
   $("#startBtn").click(function () {
     
@@ -9,18 +9,21 @@ $("document").ready(function () {
 
       if (msec == 100) {
         sec++;
-        msec = 0
+        msec = 0;        
       }
 
       if (sec == 60) {
         min++;
-        sec = 0
+        sec = 0;        
       }
+
+      // console.log(sec, min);
 
       if (min == 60) {
         hrs++;
-        min = 0
+        min = 0;       
       }
+
       display();
 
       
@@ -49,7 +52,7 @@ $("document").ready(function () {
     tmsec = msec < 10 ? "0" + msec : msec;
 
     $("#hours").text(thrs);
-    $("#minuits").text(tmin);
+    $("#minutes").text(tmin);
     $("#seconds").text(tsec);
     $("#milliseconds").text(tmsec);
   }
